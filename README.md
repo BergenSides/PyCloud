@@ -5,11 +5,11 @@ As of right now, there is no way to import or otherwise install PyCloud, I will 
 
 
 
-To begin using PyCloud, start by initializing a connection using:
+To begin using PyCloud, start by initializing a connection using:<br />
 `SetupConnection(Username, ProjectID, SessionID)`
 
-After this, you can set a cloud variable using:
+After this, you can set a cloud variable using:<br />
 `SetCloudVar(CloudVariableName, Value)`
 
-Or you can get a cloud variable's value using:
+Or you can get a cloud variable's value using:<br />
 `GetCloudVar(CloudVariableName)`
