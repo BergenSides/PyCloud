@@ -19,7 +19,7 @@ Or you can get a cloud variable's value using:<br />
 ADVANCED USAGE:
 
 To connect multiple projects:<br />
-`Projects = [Project1, Project2...]<br /> 
+`Projects = [Project1, Project2...]<br />. 
 SetupConnection(Username, Projects, SessionID)`
 
 To change variables do this:<br />
