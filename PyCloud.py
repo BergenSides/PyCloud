@@ -48,12 +48,20 @@ def SetCloudVar(CloudName, Value, ProjectID=""):
   })
 
 def GetCloudVar(CloudName, ProjectID=""):
-  Limit = 100
+  #Limit = 100
   if ProjectID == "":
     ProjectID = ID
+  '''
   while True:
     Response = requests.get(f"https://clouddata.scratch.mit.edu/logs?projectid={ProjectID}&limit={Limit}&offset=0").json()
-    for x in range(100):
-      if Response[x + Limit - 100]["name"] == f"☁ {CloudName}":
-        return Response[x + Limit - 100]["value"]
+    if Limit > 500:
+      return int()
+    for x in range(99):
+      if Response[x]["name"] == f"☁ {CloudName}":
+        return Response[x]["value"]
     Limit += 100
+  '''
+  Response = requests.get(f"https://clouddata.scratch.mit.edu/logs?projectid={ProjectID}&limit=100&offset=0").json()
+  for x in range(99):
+    if Response[x]["name"] == f"☁ {CloudName}":
+      return Response[x]["value"]
