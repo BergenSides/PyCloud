@@ -12,7 +12,7 @@ After this, you can set a cloud variable using:<br />
 `SetCloudVar(CloudVariableName, Value)`
 
 Or you can get a cloud variable's value using:<br />
-`GetCloudVar(CloudVariableName)`
+`GetCloudVar(CloudVariableName)`<br /><br /><br />
 
 
 
