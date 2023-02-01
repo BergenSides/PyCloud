@@ -20,7 +20,7 @@ ADVANCED USAGE:
 
 To connect multiple projects:<br />
 `Projects = [Project1, Project2...]`<br />
-S`etupConnection(Username, Projects, SessionID)`
+`SetupConnection(Username, Projects, SessionID)`
 
 To change variables do this:<br />
 `SetCloudVar(CloudVariableName, Value, Projects[NumberOfProjectInList])`
