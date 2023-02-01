@@ -19,8 +19,8 @@ Or you can get a cloud variable's value using:<br />
 ADVANCED USAGE:
 
 To connect multiple projects:<br />
-`Projects = [Project1, Project2...]\n
-SetupConnection(Username, Projects, SessionID)`
+`Projects = [Project1, Project2...]
+    SetupConnection(Username, Projects, SessionID)`
 
 To change variables do this:<br />
 `SetCloudVar(CloudVariableName, Value, Projects[NumberOfProjectInList])`
