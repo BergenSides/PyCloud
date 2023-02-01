@@ -9,7 +9,7 @@ def SetupConnection(Username, ProjectID, Cookie):
   global ID
   global Websocket
   User = Username
-  if str(type(ProjectID)) == "<class 'dict'>":
+  if str(type(ProjectID)) == "<class 'list'>":
     ID = []
     for x in range(len(ProjectID)):
       ID.append(ProjectID[x])
@@ -22,7 +22,7 @@ def SetupConnection(Username, ProjectID, Cookie):
     origin="https://scratch.mit.edu",
     enable_multithread=True
   )
-  if str(type(ProjectID)) == "<class 'dict'>":
+  if str(type(ProjectID)) == "<class 'list'>":
     for x in range(len(ID)):
       SendPacket({
         "method": "handshake",
